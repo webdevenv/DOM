@@ -82,7 +82,7 @@ module.exports = {
         },
         build: {
           script:
-            'cross-env NODE_ENV=production parcel build src/index.html --out-dir prod --target browser',
+            'cross-env NODE_ENV=production parcel build src/index.html --public-url ./ --out-dir prod --target browser  --no-cache --no-source-maps',
           hiddenFromHelp: true,
         },
       },
